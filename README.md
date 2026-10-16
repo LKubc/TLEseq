@@ -1,10 +1,40 @@
-# TLEseq - Single-cell spatial transcriptomics in the epileptic human hippocampus
-This project contains code to reproduce figures and summary statistics for:
-  **Kraus et al., “A unifying neuropathological spectrum underlies medial temporal lobe epilepsy”** (manuscript, add doi when avail).
+# TLEseq
+'A unifying neuropathological spectrum underlies medial temporal lobe epilepsy'
 
-## What this repo contains
-- List overview of files here
+## Overview
 
-01_MakeMegadaat: 
-- This script shows how we made the main data 'MegaData_v8' also accessible on the GEO repository. We recommend working with this data file using the code provided in this repository.
-  The raw per-sample GEO data can also be used, but it does not retain spatial information and we do not provide information on how to process these files for our pipeline. 
+This repository contains R scripts and analysis workflows for investigating the molecular and spatial organization of the human hippocampus in temporal lobe epilepsy (TLE).
+
+We use high-resolution, single-cell spatial transcriptomics generated with the 10x Genomics Xenium platform to examine cell-type composition, transcriptional states, and regional organization across hippocampal tissue from individuals with epilepsy and postmortem controls.
+
+The repository is intended to document the computational analyses and support reproducibility. 
+
+
+## Repository organization
+
+
+| Folder | Contents |
+| --- | --- |
+| `1_MegaData/` | Dataset integration, global cell annotations, quality control, and sample-level analyses |
+| `2_domain_analysis/` | Hippocampal domains, regional gene expression, and cell-type composition |
+| `3_ExcitatoryNeurons_analysis/` | Excitatory neuron subtypes and related analyses |
+| `4_InhibitoryNeurons_analysis/` | Inhibitory neuron subtypes and related analyses |
+| `5_Microglia_analysis` | Microglial cell states and associated analyses |
+| `6_Patien-level-clustering_analysis/` | Patient-level pseudobulk profiles, PCA, and normalization comparisons |
+
+Individual scripts are numbered where execution order is relevant. Some workflows require outputs from earlier processing steps.
+
+## Data availability
+
+**Public data-access details will be added when available and appropriate for release.** 
+(reference GEO repository)
+
+## Interactive Website
+
+(when website is live, link here)
+
+## Citation
+
+**Publication details to be added.**
+
+
